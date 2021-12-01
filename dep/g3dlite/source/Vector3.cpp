@@ -102,6 +102,8 @@ Any Vector3::toAny(const std::string& name) const {
     return any;
 }
 
+Vector3::Vector3(const Vector3& other) : x(other.x), y(other.y), z(other.z) {}
+
 Vector3::Vector3(const class Color3& v) : x(v.r), y(v.g), z(v.b) {}
 
 Vector3::Vector3(const class Vector3int32& v) : x((float)v.x), y((float)v.y), z((float)v.z) {}

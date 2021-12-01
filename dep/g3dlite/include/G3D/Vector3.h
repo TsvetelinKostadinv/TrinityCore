@@ -72,6 +72,7 @@ private:
 public:
     /** Initializes to zero */
     Vector3();
+    Vector3(const Vector3& other);
 
     /** 
         \param any  Must either Vector3(#, #, #) or Vector3 {x = #, y = #, z = #}.
